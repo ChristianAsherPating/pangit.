@@ -8,21 +8,22 @@
   </style>
 </head>
 <body>
-  <h2>Pangit ahk Gwapu iman ni Jojo</h2>
-  <button onclick="yesClicked()">Yes</button>
-  <button id="noBtn" onclick="noClicked()">No</button>
+  <h2>Gwapu piman ni Jojo</h2>
+  <button onclick="yesClicked()">wen sobra</button>
+  <button id="noBtn" onclick="noClicked()">haan</button>
 
   <script>
     function yesClicked() {
-      alert("😂Wahahahahahaaa");
+      alert("😂Wakwakwakwakwakwakwakwakkkkkk");
     }
-    function noClicked() {
-      let noBtn = document.getElementById("noBtn");
-      let x = Math.floor(Math.random() * 300) + 50;
-      let y = Math.floor(Math.random() * 300) + 50;
+    
+    let noBtn = document.getElementById("noBtn");
+    noBtn.addEventListener("mouseover", function() {
+      let x = Math.floor(Math.random() * (window.innerWidth - 100));
+      let y = Math.floor(Math.random() * (window.innerHeight - 50));
       noBtn.style.left = x + "px";
       noBtn.style.top = y + "px";
-    }
+    });
   </script>
 </body>
 </html>
