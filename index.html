@@ -3,20 +3,36 @@
 <head>
   <title>Prank</title>
   <style>
-    body { text-align:center; margin-top:50px; font-family:Arial; }
-    #noBtn { position:absolute; left:150px; top:150px; }
+    body { 
+      text-align:center; 
+      margin-top:50px; 
+      font-family:Arial; 
+      font-size: 32px; /* makes all text bigger */
+    }
+    h2 {
+      font-size: 40px; /* makes "Pangit ahk" very big */
+    }
+    button {
+      font-size: 28px; /* makes Yes/No buttons bigger */
+      padding: 10px 20px; /* adds space inside buttons */
+    }
+    #noBtn { 
+      position:absolute; 
+      left:150px; 
+      top:150px; 
+    }
   </style>
 </head>
 <body>
-  <h2>Gwapu piman ni Jojo</h2>
-  <button onclick="yesClicked()">wen sobra</button>
-  <button id="noBtn" onclick="noClicked()">haan</button>
+  <h2>Gwapu iman ni Jojo Taguitag nga taga Tinglayan</h2>
+  <button onclick="yesClicked()">Wen sobra</button>
+  <button id="noBtn">Haan</button>
 
   <script>
     function yesClicked() {
-      alert("😂Wakwakwakwakwakwakwakwakkkkkk");
+      alert("😂 Wakwakwakwakwakwakawkwakwakwakkkkkkkk");
     }
-    
+
     let noBtn = document.getElementById("noBtn");
     noBtn.addEventListener("mouseover", function() {
       let x = Math.floor(Math.random() * (window.innerWidth - 100));
